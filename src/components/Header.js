@@ -8,13 +8,17 @@ import {
     NavItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import lizardWizard from '../app/assets/imgs/lizardWizard.jpg';
 
 const Header = () => {
     return (
         <header>
-            <Container>
+            <Container className='border-bottom'>
                 <Row>
                     <Col>QUIZZARD</Col>
+                </Row>
+                <Row>
+                    <img src={lizardWizard} className='w-25 m-auto' alt='Lizard Wizard' />
                 </Row>
                 <Row>
                     <Col>
@@ -22,16 +26,16 @@ const Header = () => {
                             <Collapse navbar>
                                 <Nav className='me-auto w-100 nav-fill' navbar>
                                     <NavItem>
-                                        <NavLink>Home</NavLink>
+                                        <NavLink to='/'>Home</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink>Quizzes</NavLink>
+                                        <NavLink to='/quizzes'>Quizzes</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink>Listicles</NavLink>
+                                        <NavLink to='/listicles'>Listicles</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink>User</NavLink>
+                                        <NavLink to='/profile'>Profile</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

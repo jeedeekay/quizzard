@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <Container>
             <Row>
-                <Col></Col>
+                <Col>HOME</Col>
             </Row>
         </Container>
     );

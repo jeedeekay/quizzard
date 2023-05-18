@@ -35,6 +35,9 @@ const Header = () => {
                                         <NavLink to='/listicles'>Listicles</NavLink>
                                     </NavItem>
                                     <NavItem>
+                                        <NavLink to='/Pointless'>Pointless</NavLink>
+                                    </NavItem>
+                                    <NavItem>
                                         <NavLink to='/profile'>Profile</NavLink>
                                     </NavItem>
                                 </Nav>
